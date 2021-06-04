@@ -1,14 +1,14 @@
 TODO:
 
 -- Setup --
-    [ ] - Add six photos into public/images
-    [ ] - Modify gallery.data.js for each photo with `id`, `title`, `description`, and `path`
-        [ ] - Each `id` should be a unique number (e.g. 1, 2, 3 ...)
-    [ ] - Install `nodemon` with `npm install nodemon --global`
+    [x] - Add six photos into public/images
+    [x] - Modify gallery.data.js for each photo with `id`, `title`, `description`, and `path`
+        [x] - Each `id` should be a unique number (e.g. 1, 2, 3 ...)
+    [x] - Install `nodemon` with `npm install nodemon --global`
 
 -- Base Mode --
     [ ] - Need three (3) components
-        [ ] - `App` - represents the overall application or site 
+        [x] - `App` - represents the overall application or site 
         [ ] - `GalleryList` - represents the gallery of images. With components, we could reuse this component in different applications
         [ ] - `Galleryitem` - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
     [ ] - Use `axios` to retrieve (`GET`) data from `/gallery` and store it in `App.jsx`
