@@ -1,9 +1,12 @@
-// import GalleryItem CSS
 import axios from 'axios';
+import {useState} from 'react';
+// import GalleryItem CSS
 import './GalleryItem.css';
 
 // function to show images on DOM
 function GalleryItem ({item, getGallery}) {
+    // useState variable isHidden to toggle description
+    const [isHidden, setIsHidden] = useState(false);
 
 
     // handle like click to increase count
@@ -25,15 +28,29 @@ function GalleryItem ({item, getGallery}) {
         });
     } // end handleLikes
 
-
+    // handle the image click
+    const handleImage = () => {
+        // console log to show imaged was clicked
+        console.log('Clicked Image!');
+       
+    }
 
     return (
         <>
             <div className="galleryItem-container">
-                <img src={item.path} />   
+                <div>
+                    <img src={item.path} onClick={(handleImage)}/>
+                </div>
+                    
+                <div>
+                    <p>{item.description}</p>
+                </div>
+
             </div>
-            <button onClick={handleLikes}>Like</button>
-            <p>{item.likes} Likes</p>     
+            <div>
+                <button onClick={handleLikes}>Like</button>
+                <p>{item.likes} People Like This</p> 
+            </div>
         </>    
     )
 } // end GalleryItem

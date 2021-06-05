@@ -21,8 +21,8 @@ TODO:
             [x] - Update the `GalleryList` to use this component to display an image
             [ ] - Swap the image with the description on `click`
             [ ] - Use `conditional rendering`
-            [ ] - Display the number of likes for each item
-                [ ] - Create a (`like`) button
+            [x] - Display the number of likes for each item
+                [x] - Create a (`like`) button
             [x] - When the (`like`) button is clicked, use `axios` to update (`PUT`) the like count `/gallery/like/:id`
             [x] - Update the gallery each time a (`like`) button is clicked
 
