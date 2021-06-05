@@ -23,12 +23,12 @@ TODO:
             [ ] - Use `conditional rendering`
             [ ] - Display the number of likes for each item
                 [ ] - Create a (`like`) button
-            [ ] - When the (`like`) button is clicked, use `axios` to update (`PUT`) the like count `/gallery/like/:id`
-            [ ] - Update the gallery each time a (`like`) button is clicked
+            [x] - When the (`like`) button is clicked, use `axios` to update (`PUT`) the like count `/gallery/like/:id`
+            [x] - Update the gallery each time a (`like`) button is clicked
 
 -- WireFrame --
     [x] - My Gallery Header
     [x] - Six photos displayed
         [x] - Box? Inline? Flex?
-        [ ] - (`Like`) button displayed below each image
-        [ ] - Like `count` displayed below (`like`) button 
+        [x] - (`Like`) button displayed below each image
+        [x] - Like `count` displayed below (`like`) button 
