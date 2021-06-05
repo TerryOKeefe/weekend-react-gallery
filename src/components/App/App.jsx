@@ -39,6 +39,7 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
+        <p>Click on an image to see description!</p>
         
         {/* <img src="images/twinkie_dog.jpg"/> */}
         <GalleryList list={galleryList} getGallery={getGallery} />

@@ -44,7 +44,7 @@ function GalleryItem ({item, getGallery}) {
                 )}   
                 
             <div>
-                <button onClick={handleLikes}>Like</button>
+                <button onClick={handleLikes}>Like Photo</button>
                 <p>{item.likes} People Like This</p> 
             </div>
         </div>    

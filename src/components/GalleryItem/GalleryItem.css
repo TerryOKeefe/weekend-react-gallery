@@ -1,3 +1,4 @@
 .galleryItem-container {
-    padding: 10px;
+    padding: 20px;
+    display: inline-block;
 }
