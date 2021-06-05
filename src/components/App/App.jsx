@@ -1,10 +1,12 @@
 import Axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './App.css';
+// import GalleryList into App.jsx
+import GalleryList from '../GalleryList/GalleryList'
 
 function App() {
 
-    const [gallery, setGallery] = useState([]);
+    const [galleryList, setGalleryList] = useState([]);
 
     // When page is loaded
     useEffect( () => {
@@ -19,10 +21,10 @@ function App() {
       // axios request to server
       Axios.get('/gallery')
       .then( (response) => {
-        // setGallery to the response that comes in
-        setGallery(response.data)
-        // console log the data
-        console.log(gallery);
+        // console log the data coming in
+        console.log('Response from GET:', response.data)
+        // setGalleryList to the response that comes in
+        setGalleryList(response.data)
       })
       .catch( (error) => {
         console.log('Error in GET request', error);
@@ -36,7 +38,8 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <img src="images/twinkie_dog.jpg"/>
+        {/* <img src="images/twinkie_dog.jpg"/> */}
+        <GalleryList list={galleryList} getGallery={getGallery} />
       </div>
     );
 }

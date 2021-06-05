@@ -9,8 +9,8 @@ TODO:
 -- Base Mode --
     [ ] - Need three (3) components
         [x] - `App` - represents the overall application or site 
-        [ ] - `GalleryList` - represents the gallery of images. With components, we could reuse this component in different applications
-        [ ] - `Galleryitem` - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
+        [x] - `GalleryList` - represents the gallery of images. With components, we could reuse this component in different applications
+        [ ] - `GalleryItem` - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
     [ ] - Use `axios` to retrieve (`GET`) data from `/gallery` and store it in `App.jsx`
     [ ] - Create a new (`component`) for the `GalleryList`
         [ ] - Pass it the gallery data stored in `App.jsx` via `props`
