@@ -5,7 +5,7 @@ import './App.css';
 import GalleryList from '../GalleryList/GalleryList'
 
 function App() {
-
+    // variable to store data coming from GET
     const [galleryList, setGalleryList] = useState([]);
 
     // When page is loaded
@@ -27,9 +27,10 @@ function App() {
         setGalleryList(response.data)
       })
       .catch( (error) => {
+        // console log errors that happen
         console.log('Error in GET request', error);
       });
-    }
+    } // end getGallery
 
 
     return (
@@ -38,10 +39,13 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
+        
         {/* <img src="images/twinkie_dog.jpg"/> */}
         <GalleryList list={galleryList} getGallery={getGallery} />
+        
       </div>
     );
 }
 
+// export App
 export default App;
