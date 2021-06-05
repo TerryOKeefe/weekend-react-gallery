@@ -10,7 +10,7 @@ TODO:
     [x] - Need three (3) components
         [x] - `App` - represents the overall application or site 
         [x] - `GalleryList` - represents the gallery of images. With components, we could reuse this component in different applications
-        [ ] - `GalleryItem` - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
+        [x] - `GalleryItem` - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
     [x] - Use `axios` to retrieve (`GET`) data from `/gallery` and store it in `App.jsx`
     [x] - Create a new (`component`) for the `GalleryList`
         [x] - Pass it the gallery data stored in `App.jsx` via `props`
@@ -19,8 +19,8 @@ TODO:
     [x] - Create a new (`component`) called `GalleryItem.jsx`
         [x] - Pass it the individual gallery item via `props`
             [x] - Update the `GalleryList` to use this component to display an image
-            [ ] - Swap the image with the description on `click`
-            [ ] - Use `conditional rendering`
+            [x] - Swap the image with the description on `click`
+            [x] - Use `conditional rendering`
             [x] - Display the number of likes for each item
                 [x] - Create a (`like`) button
             [x] - When the (`like`) button is clicked, use `axios` to update (`PUT`) the like count `/gallery/like/:id`

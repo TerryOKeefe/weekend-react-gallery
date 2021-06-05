@@ -28,30 +28,26 @@ function GalleryItem ({item, getGallery}) {
         });
     } // end handleLikes
 
-    // handle the image click
-    const handleImage = () => {
-        // console log to show imaged was clicked
-        console.log('Clicked Image!');
-       
-    }
+    // console log to see what isHidden
+    console.log(isHidden);
 
     return (
-        <>
-            <div className="galleryItem-container">
-                <div>
-                    <img src={item.path} onClick={(handleImage)}/>
-                </div>
-                    
-                <div>
-                    <p>{item.description}</p>
-                </div>
-
-            </div>
+        <div className="galleryItem-container">
+                { isHidden ? (
+                    <div onClick={() => setIsHidden(false)}>
+                        <p>{item.description}</p>
+                    </div>
+                ) : (
+                    <div onClick={() => setIsHidden(true)}>
+                        <img src={item.path} />
+                    </div>
+                )}   
+                
             <div>
                 <button onClick={handleLikes}>Like</button>
                 <p>{item.likes} People Like This</p> 
             </div>
-        </>    
+        </div>    
     )
 } // end GalleryItem
 
