@@ -1,4 +1,4 @@
-import Axios from 'axios';
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 // import GalleryList into App.jsx
@@ -12,6 +12,7 @@ function App() {
     useEffect( () => {
       // run getGallery
       getGallery()
+      // [] prevents page refresh each time
     }, []);
 
     //function to Get gallery
@@ -19,7 +20,7 @@ function App() {
       // console log to show GET works on call
       console.log('GET was triggered');
       // axios request to server
-      Axios.get('/gallery')
+      axios.get('/gallery')
       .then( (response) => {
         // console log the data coming in
         console.log('Response from GET:', response.data)
@@ -32,7 +33,8 @@ function App() {
       });
     } // end getGallery
 
-
+    // layout of the DOM including component
+    // commented out old tags to replace with new ones
     return (
       <div className="App">
         <header className="App-header">
@@ -46,7 +48,7 @@ function App() {
         
       </div>
     );
-}
+} // end App
 
 // export App
 export default App;

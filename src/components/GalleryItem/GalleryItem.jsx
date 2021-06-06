@@ -1,4 +1,6 @@
+// import axios to use axios.put
 import axios from 'axios';
+// import useState for conditional rendering
 import {useState} from 'react';
 // import GalleryItem CSS
 import './GalleryItem.css';
@@ -7,7 +9,6 @@ import './GalleryItem.css';
 function GalleryItem ({item, getGallery}) {
     // useState variable isHidden to toggle description
     const [isHidden, setIsHidden] = useState(false);
-
 
     // handle like click to increase count
     const handleLikes = () => {
@@ -33,18 +34,27 @@ function GalleryItem ({item, getGallery}) {
 
     return (
         <div className="galleryItem-container">
+                {/* Conditional rendering */}
                 { isHidden ? (
+                    // if isHidden is true display description 
                     <div onClick={() => setIsHidden(false)}>
                         <p>{item.description}</p>
                     </div>
                 ) : (
+                     /*
+                        isHidden is default false displaying the images on load
+                        clicking on image sets isHidden to true
+                        thus description will appear
+                     */
                     <div onClick={() => setIsHidden(true)}>
                         <img src={item.path} />
                     </div>
                 )}   
                 
             <div>
-                <button onClick={handleLikes}>Like Photo</button>
+                {/*  like button and p tag to show below each image*/}
+                <button className="btn btn-info btn-sm" 
+                    onClick={handleLikes}>Like Photo</button>
                 <p>{item.likes} People Like This</p> 
             </div>
         </div>    

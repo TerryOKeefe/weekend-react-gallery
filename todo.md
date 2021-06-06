@@ -32,3 +32,10 @@ TODO:
         [x] - Box? Inline? Flex?
         [x] - (`Like`) button displayed below each image
         [x] - Like `count` displayed below (`like`) button 
+
+-- Do Later --
+[x] - Styling
+[ ] - Update README
+[ ] - Add more photos
+[ ] - Implement DB 
+[ ] - Stretch goals if there is time
