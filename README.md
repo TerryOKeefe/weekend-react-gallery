@@ -10,7 +10,7 @@ The data is stored in an array found within `modules/gallery.data.js`.
 
 ## Screen Shot
 
-![Screenshot](./images/react_gallery.png)
+![Screenshot](./screenshot/react_gallery.png)
 
 ### Prerequisites
 
