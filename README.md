@@ -4,9 +4,9 @@
 
 _Duration: 1 Week_
 
-In this project a user can view images on the screen. The user can click on each image and a description of that image will appear. If the user clicks on the description, the image will then reappear. A [Like] button is below each image. A user can click the [like] button which in turn will increment the Like count by one.
+In this project a user can view images on the screen. The user can click on each image and a description of that image will appear. If the user clicks on the description, the image will then reappear. A [Like Photo] button is below each image. A user can click the [Like Photo] button which in turn will increment the Like count by one.
 
-The data is stored in an array found within `modules/gallery.data.js`.
+The data is stored locally in an array found within `modules/gallery.data.js`.
 
 ## Screen Shot
 
