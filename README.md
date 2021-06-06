@@ -43,6 +43,7 @@ The data is stored locally in an array found within `modules/gallery.data.js`.
 - Node.js
 - Express.js
 - Javascript
+- Bootstrap
 - HTML
 - CSS
 
